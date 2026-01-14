@@ -28,7 +28,7 @@ interface Project {
 const projects: Project[] = [
   {
     name: "Prize Hunt Frenzy",
-    link: "https://github.com/andyagdw/prize_and_trap_game",
+    link: "https://prize-hunt-frenzy.netlify.app/",
     projectDescription:
       "A web-based game developed using HTML, CSS, and JavaScript.",
     tags: ["HTML", "CSS", "JavaScript"],
