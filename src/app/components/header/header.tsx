@@ -15,19 +15,19 @@ interface NavLink {
 const navLinks: NavLink[] = [
   {
     label: "Skills",
-    path: "/#skills",
+    path: "#skills",
   },
   {
     label: "Portfolio",
-    path: "/#projects",
+    path: "#projects",
   },
   {
     label: "About Me",
-    path: "/#my-journey",
+    path: "#my-journey",
   },
   {
     label: "Get In Touch",
-    path: "/#get-in-touch",
+    path: "#get-in-touch",
   },
 ];
 
