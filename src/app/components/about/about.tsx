@@ -83,7 +83,9 @@ function Experience({ item }: { item: ExperienceInfo }) {
         <strong>{item.jobTitle}</strong>
       </AccordionTrigger>
       <AccordionContent>
-        <span className="experience-dates">{item.dates}</span>
+        <span className="experience-dates italic text-[0.8rem]">
+          {item.dates}
+        </span>
         <ul className="mt-6">
           {item.jobInfo.map((jobInfo, idx2) => {
             return <li key={idx2}>{jobInfo}</li>;

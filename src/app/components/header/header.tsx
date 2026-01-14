@@ -96,8 +96,8 @@ export default function Header() {
         </Link>
         <nav
           aria-label="primary"
-          className={`md:block order-1 md:order-0 basis-full md:basis-auto ${
-            menuIsOpen ? "block" : "hidden"
+          className={`order-1 md:order-0 basis-full md:basis-auto header__navigation overflow-hidden md:overflow-visible transition-discrete transition-[height] duration-300 ${
+            menuIsOpen ? "h-auto" : "h-0"
           }`}
         >
           <menu

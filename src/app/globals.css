@@ -175,11 +175,6 @@
   /* End PROJECTS */
 
   /* ABOUT */
-  .experience-dates {
-    font-size: 0.8rem;
-    font-style: italic;
-  }
-
   .about-inner-div {
     clip-path: polygon(
       29% 19%,
