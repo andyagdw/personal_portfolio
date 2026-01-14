@@ -45,7 +45,7 @@ export default function About() {
   return (
     <section
       aria-labelledby="my-journey"
-      className="py-20 bg-(--smart-blue) relative"
+      className="py-20 bg-(--smart-blue) relative about-wrapper"
     >
       <div className="absolute w-6/12 md:w-4/12 rotate-45 left-5 aspect-square top-0 bg-(--graphite-light)"></div>
       <div className="absolute w-3/12 md:w-2/12 rotate-45 left-10 aspect-square top-30 bg-(--ivory-light) about-inner-div"></div>

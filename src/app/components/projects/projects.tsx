@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section
       aria-labelledby="projects"
-      className="pt-10 pb-20 bg-(--smart-blue)"
+      className="pt-10 pb-20 bg-(--smart-blue) projects-wrapper"
     >
       <div className="max-w-(--max-width) mx-auto px-4">
         <h2 id="projects" className="mb-20">

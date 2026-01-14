@@ -108,6 +108,32 @@
     font-family: var(--font-ubuntu);
   }
 
+  /* Headings for each section - Ensure some space above on scroll */
+  :is(#skills, #projects, #my-journey, #get-in-touch) {
+    scroll-margin-top: 1.5em;
+  }
+
+  .hero-img-style {
+    -webkit-mask-image: url("./assets/paint_splatter_one.png");
+    mask-image: url("./assets/paint_splatter_one.png");
+    mask-position: center;
+    mask-size: cover;
+    background: linear-gradient(hsl(0, 100%, 50%), hsl(240, 100%, 50%));
+  }
+
+  form input,
+  form textarea {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  /* Shadcn svg styling: See ABOUT */
+  .details-wrapper button > svg {
+    color: var(--navy-electric) !important;
+    width: 25px !important;
+    height: 25px !important;
+  }
+  /* End Shadcn svg styling */
+
   /* HEADER */
   .nav-hamburger {
     transition-property: rotate;
@@ -130,7 +156,7 @@
   }
 
   .hero-div-right {
-    background: hsla(from var(--smart-blue) h calc(s + 20) l / alpha);
+    background: hsla(from var(--smart-blue) h calc(s + 20) l);
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 34% 78%);
   }
   /* End HERO */
@@ -143,7 +169,7 @@
   /* End SKILLS */
 
   /* PROJECTS */
-  section:has(#projects) {
+  .projects-wrapper {
     clip-path: polygon(0 0, 98% 6%, 100% 100%, 0% 100%);
   }
   /* End PROJECTS */
@@ -168,31 +194,9 @@
       100% 0%
     );
   }
-  /* End ABOUT */
 
-  .hero-img-style {
-    -webkit-mask-image: url("./assets/paint_splatter_one.png");
-    mask-image: url("./assets/paint_splatter_one.png");
-    mask-position: center;
-    mask-size: cover;
-    background: linear-gradient(hsl(0, 100%, 50%), hsl(240, 100%, 50%));
-  }
-
-  form input,
-  form textarea {
-    background-color: hsl(0, 0%, 100%);
-  }
-
-  /* Shadcn svg styling: See ABOUT */
-  .details-wrapper button > svg {
-    color: var(--navy-electric) !important;
-    width: 25px !important;
-    height: 25px !important;
-  }
-
-  /* Headings for each section */
-  :is(#skills, #projects, #my-journey, #get-in-touch) {
-    scroll-margin-top: 1.5em;
+  .about-wrapper {
+    border-end-end-radius: 600px 200px;
   }
 }
 

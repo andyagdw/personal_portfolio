@@ -34,7 +34,7 @@ export default function GetInTouch() {
               className="mx-auto rounded-full w-[15em] hero-img-style"
             />
           </div>
-          <div className="mx-auto rounded-4xl backdrop-blur-xs border">
+          <div className="mx-auto rounded-4xl backdrop-blur-xs">
             <div className="text-center m-5 md:m-30 px-10 py-5">
               <h2 id="get-in-touch">
                 Let&apos;s <span>Work Together</span>
