@@ -32,20 +32,30 @@ const navLinks: NavLink[] = [
 ];
 
 const spanStyle = "block bg-black h-1 w-6";
+const breakPoint = 768;
 
 export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
   const hamburgerRef = useRef<HTMLDivElement | null>(null);
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   const handleClick = () => {
     setMenuIsOpen((prev) => !prev);
   };
 
+  useEffect(() => {
+    const updateWindowWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", updateWindowWidth);
+    return () => window.removeEventListener("resize", updateWindowWidth);
+  });
+
   // Close menu on resize
   useEffect(() => {
     const closeMenu = () => {
-      if (window.innerWidth > 768 && menuIsOpen) {
+      if (window.innerWidth > breakPoint && menuIsOpen) {
         setMenuIsOpen(false);
       }
     };
@@ -103,6 +113,7 @@ export default function Header() {
           <menu
             className="flex gap-x-8 flex-col gap-y-8 md:gap-y-0 items-center md:flex-row relative z-1"
             ref={menuRef}
+            id="menu"
           >
             {navLinks?.map((item, idx) => {
               return (
@@ -119,6 +130,17 @@ export default function Header() {
           ref={hamburgerRef}
           tabIndex={0}
           role="button"
+          aria-controls="menu"
+          {...(menuIsOpen &&
+            windowWidth < breakPoint && {
+              "aria-expanded": true,
+              "aria-label": "Close Menu",
+            })}
+          {...(!menuIsOpen &&
+            windowWidth < breakPoint && {
+              "aria-expanded": false,
+              "aria-label": "Open Menu",
+            })}
           onClick={handleClick}
           className={`md:hidden flex flex-col items-center gap-2 cursor-pointer nav-hamburger relative z-1 ${
             menuIsOpen ? "rotate-hamburger" : "restore-rotate-hamburger"

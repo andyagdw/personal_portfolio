@@ -59,7 +59,7 @@ export default function Hero() {
             <button
               className="cursor-pointer"
               onClick={handleClick}
-              aria-label="Scroll Down"
+              aria-label="Scroll down to main content"
             >
               <DownArrow fill={"hsla(77, 100%, 97%, 1)"} />
             </button>
@@ -96,6 +96,7 @@ function SocialIcons() {
 function BouncingBall() {
   return (
     <motion.div
+      aria-hidden
       className="w-[5em] aspect-square bg-(--navy-electric) absolute left-4 z-1 motion-div-hero"
       animate={{ top: [5, 50, 5] }}
       transition={{

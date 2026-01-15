@@ -1,6 +1,7 @@
 export default function Java({ fill = "currentColor" }) {
   return (
     <svg
+      aria-hidden
       width="72"
       height="72"
       viewBox="0 0 72 72"

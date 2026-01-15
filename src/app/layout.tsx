@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 // Styles
 import "./globals.css";
 // Components
-import Header from "./components/header/header";
+// import Header from "./components/header/header";
+import Header from "./components/header-client/header-client";
 import Footer from "./components/footer/footer";
 // Fonts
 import { Nunito, Ubuntu } from "next/font/google";

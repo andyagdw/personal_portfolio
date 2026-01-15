@@ -1,6 +1,7 @@
 export default function Git({ fill = "currentColor" }) {
   return (
     <svg
+      aria-hidden
       width="67"
       height="77"
       viewBox="0 0 67 77"

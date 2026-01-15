@@ -1,6 +1,7 @@
 export default function Javascript({ fill = "currentColor" }) {
   return (
     <svg
+      aria-hidden
       width="63"
       height="72"
       viewBox="0 0 63 72"

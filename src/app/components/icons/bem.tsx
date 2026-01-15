@@ -1,6 +1,7 @@
 export default function Bem({ fill = "currentColor" }) {
   return (
     <svg
+      aria-hidden
       width="66"
       height="67"
       viewBox="0 0 66 67"

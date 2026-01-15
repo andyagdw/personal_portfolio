@@ -1,6 +1,7 @@
 export default function Scss({ fill = "currentColor" }) {
   return (
     <svg
+      aria-hidden
       width="67"
       height="67"
       viewBox="0 0 67 67"

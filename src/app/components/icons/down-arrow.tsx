@@ -1,6 +1,7 @@
 export default function DownArrow({ fill = "currentColor" }) {
   return (
     <svg
+      aria-hidden
       width="50"
       height="50"
       viewBox="0 0 16 16"
