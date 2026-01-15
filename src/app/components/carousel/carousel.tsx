@@ -53,7 +53,7 @@ const projects: Project[] = [
   {
     name: "Inance Web Localisation",
     link: "https://github.com/andyagdw/inance_web_localisation",
-    tags: ["HTML", "CSS", "JavaScript", "Python", "Django", "Bootstrap"],
+    tags: ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
     projectDescription:
       "Demo React app with English, French & Arabic (RTL) localisation, plus optional Firebase contact form and Google Analytics.",
     image: InanceWebLocalisationImg,
