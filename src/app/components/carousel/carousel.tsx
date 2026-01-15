@@ -86,6 +86,7 @@ export default function ProjectCarousel() {
                 </ul>
                 <Link
                   href={projectData.link}
+                  target="_blank"
                   className="underline underline-offset-6 hover:text-(--navy-electric) transition-colors duration-300"
                 >
                   View Project

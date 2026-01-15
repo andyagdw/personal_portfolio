@@ -3,8 +3,8 @@ import HeroImage from "@/src/app/assets/hero-image.png";
 import GeometricPatternsImage from "@/src/app/assets/abstract_geometric_patterns_with_paint_splashes.png";
 // Next
 import Image from "next/image";
-// Icons
-import Send from "../icons/send";
+// Components
+import GetInTouchText from "../get-in-touch-text/get-in-touch-text";
 
 export default function GetInTouch() {
   return (
@@ -39,9 +39,7 @@ export default function GetInTouch() {
               <h2 id="get-in-touch">
                 Let&apos;s <span>Work Together</span>
               </h2>
-              <span>
-                Get In Touch <Send />
-              </span>
+              <GetInTouchText />
             </div>
             <form className="mx-auto max-w-2xl px-2" aria-label="Get In Touch">
               <div>
